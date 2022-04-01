@@ -3,6 +3,8 @@ Here are my solutions of:
  - ERC721 on StarkNet (https://github.com/l-henri/starknet-erc721)
  - ERC20 on StarkNet (https://github.com/l-henri/starknet-erc20)
 
+init.cairo is just a blank contract I use to quickly start with a new contract with some default structure.
+
 Try not to copy and paste them (or at least please understand what has been done)
 
 I used [Nile](https://github.com/OpenZeppelin/nile) to compile and deploy the contracts.\
