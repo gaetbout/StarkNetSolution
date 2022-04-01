@@ -59,12 +59,13 @@ end
 #
 # Utils
 #
-# WIP
 func assertExpectedActualMessage{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(
-        excpected : felt, actual : felt, message : felt*):
-    # local msg
-    #   with_attr error_message(msg):
-    assert excpected = actual
-    # end
+        expected : felt, actual : felt, message : felt):
+    alloc_locals
+
+    local msg = message
+    with_attr error_message("{msg}"):
+        assert expected = actual
+    end
     return ()
 end
